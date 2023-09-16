@@ -1,5 +1,5 @@
 {{ define "main" }}
-<article class="post">
+<article class="post" {{- if .Param "autonumbering" }} autonumbering {{- end }}>
   <h1 class="post-title">
     <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
   </h1>
